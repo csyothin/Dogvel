@@ -24,10 +24,12 @@ nano .gitignore
 Copy `.env` for configure.
 ```
 cp env-example .env
+nano .env
+# set PMA_DB_ENGINE=mysql to PMA_DB_ENGINE=mariadb.
 ```
 Start docker compose (**In first time** this step need **more 30 minutes**, Please check your time before run command).
 ```
-docker-compose up -d nginx mariadb workspace
+docker-compose up -d nginx workspace mariadb phpmyadmin
 ```
 Check the server is ready.
 ```
@@ -68,5 +70,6 @@ php artisan migrate
 ```
 Path.
 ```
-192.168.33.10
+web -> 192.168.33.10
+phpmyadmin -> 192.168.33.10:8080
 ```
