@@ -1,6 +1,6 @@
 #### Install Laravel & Laradock
 Go to repository.
-`````
+```
 cd /vagrant/
 ```
 Clone laravel by use github.
