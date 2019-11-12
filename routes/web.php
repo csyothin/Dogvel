@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    // return view('welcome');
+  return view('client.index');
 });
+
+Route::resource('posts','PostController');
