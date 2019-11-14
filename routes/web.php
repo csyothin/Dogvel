@@ -12,5 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+Route::get('/admin', function () {
+    return view('admin');
+});
+Route::get('/admin/login', function () {
+    return view('login');
+});
+Route::get('/admin/posts', function () {
+    return view('posts');
+});
+Route::get('/blank', function () {
+    return view('blank');
 });
